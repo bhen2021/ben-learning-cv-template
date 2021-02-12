@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: darkgray;
+    background-color: lightgrey;
     }
 .bottom-left {
     position: absolute;
@@ -31,7 +31,8 @@ hr.a {
     text-align: center;
 }
 hr.b {
-    border: 5px solid grey;
+    border: 8px solid lightgray;
+
 }
 </style>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -41,17 +42,20 @@ hr.b {
     <style>
     .grid-container {
         display: grid;
-        grid-template-columns: 428px 877px;
-        grid-template-rows: 1000px;
-        grid-gap: 10px;
-        background-color: grey;
+        grid-template-columns: 428px 871px;
+        grid-template-rows: 1100px;
+        grid-gap: 17px;
+        background-color: lightgray;
         padding: 10px;
+        
+        
     }
     .grid-container > div {
-        padding: 0px;
-        background-color: grey;
-        text-align:center;
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
         background-color: whitesmoke;
+        
     }
     </style>
     <!-- grid container -->
@@ -59,7 +63,7 @@ hr.b {
         <!-- left column -->
         <div>
             <img src="bhen1.jpg" width="428" height="290" alt="master" >
-            <div class="bottom-left" style="color:white";><h2>Bensor O. Datumanong</h2></div>
+            <div class="bottom-left" style="color:white";><h3>Bensor O. Datumanong</h3></div>
         </div>
         <!-- end left column -->
      
@@ -96,6 +100,26 @@ hr.b {
                 <?= $cvtemp['work4']; ?>
             </div></br>
             <hr class="b">
+            <div class="a">
+            <h1><i class='fa fa-certificate' style="font-size:30px;color:black;padding-top:30px"></i> Educational</h1>
+            </div>
+            <div class="a">
+                <b>Asian Institute of Cumputer Studies</b></br>
+                <i class='far fa-calendar-alt'> 2014 - 2018</i></br>
+                <?= $cvtemp1['educa1']; ?>
+            </div>
+            <hr class="a">
+            <div class="a">
+                <b>Maria Tinga Natinal High School</b></br>
+                <i class='far fa-calendar-alt'> 2010 - 2014</i></br>
+                <?= $cvtemp1['educa2']; ?>
+            </div>
+            <hr class="a">
+            <div class="a">
+                <b>Maharlika Elementary Shool</b></br>
+                <i class='far fa-calendar-alt'> Jan 2004 - 2010</i></br>
+                <?= $cvtemp1['educa3']; ?>
+            </div></br>
             
 
 
