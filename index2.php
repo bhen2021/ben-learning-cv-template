@@ -3,9 +3,10 @@
 <title>cv-ben@youhq</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body,h1,h2,h3,h4,h5,h6,p,i {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif'
 }
 
 a {
@@ -32,13 +33,15 @@ hr.a {
 }
 hr.b {
     border: 8px solid lightgray;
-
 }
 </style>
+
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
 <div>
+
     <style>
     .grid-container {
         display: grid;
@@ -46,24 +49,36 @@ hr.b {
         grid-template-rows: 1100px;
         grid-gap: 17px;
         background-color: lightgray;
-        padding: 10px;
-        
-        
+        padding: 10px;    
     }
     .grid-container > div {
         padding-right: 0px;
         padding-left: 0px;
         text-align: center;
         background-color: whitesmoke;
-        
     }
     </style>
-    <!-- grid container -->
+
+
+    <!-- main grid container -->
     <div class="grid-container">
+
         <!-- left column -->
         <div>
             <img src="bhen1.jpg" width="428" height="290" alt="master" >
-            <div class="bottom-left" style="color:white";><h3>Bensor O. Datumanong</h3></div>
+            <div class="bottom-left" style="color:white";><h2>Bensor O. Datumanong</h2></div></br>
+            <div class="a">
+                <p><i class='fa fa-briefcase' style="font-size:18px;color:black;padding-top:20;padding-right:15px"></i>I.T. at Letscobo.com</p></div>
+            <div class="a">
+                <p><i class='fas fa-home' style="font-size:18px;color:black;padding-top:20;padding-right:15px"></i>Arayat Pampanga, PHIL.</p></div>
+            <div class="a">
+                <p><i class='fa fa-envelope' style="font-size:18px;color:black;padding-top:20;padding-right:15px"></i>Ben@youhq.co</p></div>
+            <div class="a">
+                <p><i class='fa fa-phone' style="font-size:18px;color:black;padding-top:20;padding-right:15px"></i>09307446988</p></div>
+            <hr class="a" style="width:350px">
+            <div class="a">
+            <h3><i class='fa fa-asterisk' style="font-size:20px;color:black;padding-top:20;padding-right:15px;"></i>Skills</h3></div>
+
         </div>
         <!-- end left column -->
      
@@ -71,10 +86,12 @@ hr.b {
 
 
 
-        <!-- right column -->
+        <!-- right column  -->
         <div></br>
+
+            <!-- work expi -->
             <div class="a">
-            <h1><i class='fa fa-briefcase' style="font-size:30px;color:black;"></i> Work Experience</h1>
+            <h1><i class='fa fa-briefcase' style="font-size:30px;color:black;padding-right:10px"></i> Work Experience</h1>
             </div>
             <div class="a">
                 <b>PHP Developer / Letscobo.com</b></br>
@@ -100,8 +117,11 @@ hr.b {
                 <?= $cvtemp['work4']; ?>
             </div></br>
             <hr class="b">
+            <!-- end work exp -->
+
+            <!-- educational --> 
             <div class="a">
-            <h1><i class='fa fa-certificate' style="font-size:30px;color:black;padding-top:30px"></i> Educational</h1>
+            <h1><i class='fa fa-certificate' style="font-size:30px;color:black;padding-top:30px;padding-right:10px"></i> Educational</h1>
             </div>
             <div class="a">
                 <b>Asian Institute of Cumputer Studies</b></br>
@@ -120,21 +140,13 @@ hr.b {
                 <i class='far fa-calendar-alt'> Jan 2004 - 2010</i></br>
                 <?= $cvtemp1['educa3']; ?>
             </div></br>
-            
+            <!--end educational -->  
 
-
-
-        </div>
-        <!--end right column -->    
-        
-        
-        
-        
-        
-    
+        </div>  
+        <!-- end right column -->
 
     </div>
-    <!-- grid container -->
+    <!-- end main grid container -->
 
 </div>
 
