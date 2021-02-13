@@ -10,11 +10,11 @@ $cvtemp = [
 
 
 $cvtemp1 = [
-    'educa1' => 'BSCS Bachelor Degree.',
+    'educa1' => 'BSCS-Bachelor Degree',
     'educa2' => 'Graduated.',
     'educa3' => 'Graduated.',
 
 
 ];
 
-require 'index2.php';
+require 'index1.php';
